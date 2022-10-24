@@ -19,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "mprocs \"npx react-scripts start\" \"npx bittorrent-tracker\" \"nodemon server/index.mjs\"",
+    "start": "mprocs \"npx react-scripts start\" \"npx bittorrent-tracker\" \"node --watch server/index.mjs\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,7 +44,6 @@
   },
   "devDependencies": {
     "bittorrent-tracker": "^9.19.0",
-    "mprocs": "^0.6.3",
-    "nodemon": "^2.0.20"
+    "mprocs": "^0.6.3"
   }
 }
